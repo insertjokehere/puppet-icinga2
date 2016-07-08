@@ -54,6 +54,7 @@ class icinga2::server::config inherits icinga2::server {
     owner  => $etc_icinga2_confd_owner,
     group  => $etc_icinga2_confd_group,
     mode   => $etc_icinga2_confd_mode,
+    purge  => $purge_unmanaged_conf_files
   }
 
   #Directory resource for /etc/icinga2/features-available/:

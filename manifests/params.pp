@@ -244,6 +244,7 @@ class icinga2::params {
   
   #Whether to purge object files or directories in /etc/icinga2/objects that aren't managed by Puppet
   $purge_unmanaged_object_files = false
+  $purge_unmanaged_conf_files = false
 
   ##################
   # Icinga 2 server service settings
