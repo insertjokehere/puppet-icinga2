@@ -113,7 +113,7 @@ class icinga2::params {
           $server_plugin_package_install_options = '--no-install-recommends'
         }
         #...but 14.04 does:
-        '14.04': {
+        '14.04', '16.04': {
           $icinga2_server_package = 'icinga2'
           $icinga2_server_plugin_packages = [ 'nagios-plugins', 'nagios-plugins-basic', 'nagios-plugins-common', 'nagios-plugins-standard', 'nagios-snmp-plugins', 'nagios-plugins-extra', 'nagios-plugins-contrib', 'nagios-nrpe-plugin']
           $icinga2_server_mail_package = 'mailutils'
